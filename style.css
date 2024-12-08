@@ -1,0 +1,256 @@
+:root {
+    --color-primary: #508C9B; /* Deep Blue */
+    --color-secondary: #134B70; /* Teal Blue */
+    --color-accent: #134B70; /* Yellow */
+    --color-light: #EEEEEE; /* Light Gray */
+    --primary-color: #201E43; /* Dark Primary */
+    --tertiary-color: #508C9B; /* Teal */
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar a {
+    color: white !important;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero h4 {
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background-color: var(--tertiary-color);
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: var(--color-secondary);
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--color-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: var(--color-light);
+}
+
+.page-title h1 {
+    font-size: 24px;
+    color: var(--color-secondary);
+}
+
+/* Container and Section Styling */
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, var(--color-accent), var(--color-secondary));
+    color: var(--color-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.info-text {
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* List Styling */
+.prestasi-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.prestasi-list li {
+    background-color: var(--color-light);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--color-primary);
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.prestasi-list li:hover {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+.details {
+    display: none;
+    margin-top: 0.5rem;
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-light);
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar (Taskbar) */
+.sidebar {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    width: 100%;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.sidebar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: var(--color-secondary);
+}
+
+.sidebar .active {
+    background-color: var(--color-primary);
+}
+
+/* Subject Table */
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--color-light);
+}
+
+.subject-table th, .subject-table td {
+    border: 1px solid var(--color-secondary);
+    padding: 10px;
+    text-align: left;
+}
+
+.subject-table th {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+.subject-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.subject-table tr:hover {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+/* Icon Section */
+.icon-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.icon-section div {
+    text-align: center;
+}
+
+.icon-section i {
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.icon-section h5 {
+    margin-top: 10px;
+}
+
+
